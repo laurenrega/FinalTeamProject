@@ -1,14 +1,18 @@
 # FinalTeamProject
 
+###Project Instructions:
 For this project, you need to research and develop one unique feature per team member and integrate it into the application that you have been making in the previous homework web application project.  I am not providing any resources for this team project other than the list of 3 possible options for your project.  The objective of this is for you to work with your team to plan, develop, and integrate your features together in a final project.  Each persons work should be easily visible on the site and the site should be organized thoughtfully and cohesively i.e. not just random stuff thrown together.  Come up with a concept for your application that uses these three features, or you can propose a different feature to the professor for approval.  Generally I will approve anything that is of similar difficulty to the options below
 
-Chosen Project features 
+##Chosen Project features 
 
-## Lauren Rega:
+### Lauren Rega:
 1.  Use the statistics project to create API endpoints and then consume those endpoints using a JavaScript chart selected from the ones listed in this article here (Links to an external site.).
 
-## Sally Khalil
+### Sally Khalil
 2.  Create a login and registration process that includes email verification.  You can use a service like SendGrid to send email and you should look for a Flask Plugin to help.
+
+## Project Concept:
+The user will be able to monitor how many listings were posted to zillow each year to help monitor real estate trends. They can view more specific data on the homepage for each listing. The user will login to their account to view this information. They will receive a verification when their email is confirmed.  
 
 ## Feature 1:
 
@@ -31,3 +35,5 @@ Lauren used this tutorial to implement feature 1: [tutorial link](https://css-tr
   
 - The chart will update again:
 ![deletedListing](app/screenshots/deletedListing.PNG)
+  
+## Installation Instructions
