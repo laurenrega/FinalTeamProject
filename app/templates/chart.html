@@ -3,12 +3,18 @@
 {% block content %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 
-<div class="container">
+<div class="row">
+<p>Zillow Listings Per Year:</p>
+</div>
+<div class="row">
+
+</div>
+    <div clas="row"></div>
 
 <div class="chart" style="position: relative; height:80vh; width:100vw">
 <canvas id="myChart"></canvas>
 </div>
-</div>
+
  <script>
 function BuildChart(labels, values, chartTitle) {
     var data = {
@@ -17,6 +23,14 @@ function BuildChart(labels, values, chartTitle) {
             label: chartTitle, // Name the series
             data: values,
             backgroundColor: ['rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
+                'rgb(54, 162, 235)',
                 'rgb(54, 162, 235)',
                 'rgb(54, 162, 235)',
                 'rgb(54, 162, 235)',
@@ -43,14 +57,14 @@ function BuildChart(labels, values, chartTitle) {
 
                     scaleLabel: {
                         display: true,
-                        labelString: 'Year'
+                        labelString: '# of Listings'
 
                     }
                 }],
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: '# of Listings'
+                        labelString: 'Year'
                     }
                 }]
             },
@@ -85,6 +99,5 @@ BuildChart(labels, values, "Listings Per Year");
   xhttp.open("GET", "http://localhost:5000/api/v1/listing_chart", false);
   xhttp.send();
 </script>
-
 
 {% endblock %}
