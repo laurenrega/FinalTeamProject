@@ -1,9 +1,11 @@
-{% extends "layout.html" %}
-{% block content %}
-    {%  if not current_user.is_authenticated %}
+<!doctype html>
+<html lang="en">
+<head>
+ <div class="jumbotron">
+        <h1 class="display-4">Zillow Listings</h1>
     <p>Please sign up</p>
-{% endif %}
-{% if current_user.is_authenticated %}
+ </div>
+</head>
 <table class="table">
     <thead>
     <tr>
@@ -30,5 +32,4 @@
     {% endfor %}
     </tbody>
 </table>
-{%  endif %}
-{% endblock %}
+</html>
