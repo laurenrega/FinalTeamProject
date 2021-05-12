@@ -17,7 +17,7 @@
     {% for listing in listings %}
     <tr>
         <td><a href="view/{{listing.id}}">{{ listing.Index }}</a></td>
-        <td>{{ listing.Living_space_sq_ft }}</td>
+        <td>{{ listing.Living_Space_sq_ft }}</td>
         <td>{{ listing.Beds }}</td>
         <td>{{ listing.Baths }}</td>
         <td>{{ listing.Zip }}</td>
@@ -27,4 +27,5 @@
     {% endfor %}
     </tbody>
 </table>
+
 {% endblock %}
