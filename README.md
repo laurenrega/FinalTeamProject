@@ -12,7 +12,7 @@ Chosen Project features
 
 ## Feature 1:
 
-Lauren used this tutorial to implement feature 1: [tutorial](https://css-tricks.com/the-many-ways-of-getting-data-into-charts/)
+Lauren used this tutorial to implement feature 1: [tutorial link](https://css-tricks.com/the-many-ways-of-getting-data-into-charts/)
 
 - The chart she generated displays the number of listings posted per year from a Zillow table.
   ![apiChart](app/screenshots/apiChart.PNG)
