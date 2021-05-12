@@ -6,7 +6,7 @@ For this project, you need to research and develop one unique feature per team m
 ## Chosen Project features 
 
 ### Lauren Rega:
-1.  Use the statistics project to create API endpoints and then consume those endpoints using a JavaScript chart selected from the ones listed in this article here (Links to an external site.).
+1.  Use the statistics project to create API endpoints and then consume those endpoints using a JavaScript chart.
 
 ### Sally Khalil
 2.  Create a login and registration process that includes email verification.  You can use a service like SendGrid to send email and you should look for a Flask Plugin to help.
