@@ -137,23 +137,6 @@ def api_chart() -> str:
 
 
 
-
-@app.route("/chart", methods=['GET'])
-def chart():
-    return render_template('chart.html', title='Chart')
-
-
-@app.route('/api/v1/listing_chart', methods=['GET'])
-def api_chart() -> str:
-    cursor = mysql.get_db().cursor()
-    cursor.execute('SELECT Year, count("Index") as count FROM tblZillowImport group by Year')
-    result = cursor.fetchall()
-    json_result = json.dumps(result)
-    print(json_result)
-    resp = Response(json_result, status=200, mimetype='application/json')
-    return resp
-
-
 @app.route('/view/<int:listing_id>', methods=['GET'])
 def record_view(listing_id):
     cursor = mysql.get_db().cursor()
